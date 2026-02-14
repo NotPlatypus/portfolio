@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aleksa Stanojević - Professional Web Developer from Serbia">
+    <meta name="author" content="Aleksa Stanojević">
+    <title>Aleksa Stanojević - Web Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-indicator"></div>
+
+    <!-- Animated Background -->
+    <div class="background-animated">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <canvas id="stars-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">ALEKSA.DEV</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">Hi, I'm Aleksa Stanojević</div>
+            <h1 class="glitch-text">
+                <span>WEB DEVELOPER</span>
+            </h1>
+            <span class="hero-tag">🚀 Based in Serbia • 18 Years Old</span>
+            <p class="hero-description">
+                Passionate web developer specialized in creating modern, responsive, and 
+                functional web applications with clean code and exceptional user experience.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:aleksa.stanojevic2008@gmail.com" class="social-link" title="Email" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+                <a href="https://github.com" class="social-link" title="GitHub" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" class="social-link" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="parallax-section">
+        <div class="section-header reveal">
+            <span class="section-tag">About Me</span>
+            <h2>Who Am I?</h2>
+            <p class="section-description">
+                Get to know the developer behind the code
+            </p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal-left parallax-layer" data-speed="0.5">
+                <p>
+                    Hello! I'm <span class="highlight">Aleksa Stanojević</span>, an 18-year-old passionate web developer 
+                    from Serbia. My programming journey began during my elementary school years, where I discovered 
+                    my passion for coding and technology.
+                </p>
+                <p>
+                    I continued my education at <span class="highlight">Jovan Jovanović Zmaj Gymnasium</span> in Novi Sad, 
+                    one of the most prestigious and challenging schools in Serbia with a strong focus on programming 
+                    and computer science. This rigorous academic environment helped me develop strong problem-solving 
+                    skills and deep technical knowledge.
+                </p>
+                <p>
+                    I specialize in creating <span class="highlight">professional web applications</span> using modern 
+                    technologies and best practices. I approach every project with attention to detail 
+                    and a focus on performance, scalability, and exceptional user experience.
+                </p>
+                <p>
+                    I'm constantly learning new technologies and keeping up with the latest trends in web development. 
+                    My goal is to create web solutions that not only look great but also provide 
+                    <span class="highlight">exceptional functionality and performance</span>.
+                </p>
+            </div>
+            <div class="stats-grid reveal-right parallax-layer" data-speed="0.7">
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Years Old</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Years Coding</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dedication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="parallax-section">
+        <div class="section-header reveal">
+            <span class="section-tag">Skills</span>
+            <h2>Tech Stack</h2>
+            <p class="section-description">
+                Technologies and tools I use to bring ideas to life
+            </p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-card reveal parallax-layer" data-speed="0.3">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">Backend & Scripting</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.4">
+                    <div class="skill-icon">⚙️</div>
+                    <div class="skill-name">C#</div>
+                    <div class="skill-level">Desktop & Backend</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.5">
+                    <div class="skill-icon">📜</div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">Frontend Development</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.6">
+                    <div class="skill-icon">🔷</div>
+                    <div class="skill-name">TypeScript</div>
+                    <div class="skill-level">Type-Safe Dev</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.3">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-level">Semantic Markup</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.4">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-name">CSS3</div>
+                    <div class="skill-level">Modern Styling</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.5">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-level">Database Management</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.6">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">Oracle APEX</div>
+                    <div class="skill-level">Low-Code Dev</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.3">
+                    <div class="skill-icon">⚛️</div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-level">UI Library</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.4">
+                    <div class="skill-icon">🟢</div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-level">Server Runtime</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.5">
+                    <div class="skill-icon">🔧</div>
+                    <div class="skill-name">Git</div>
+                    <div class="skill-level">Version Control</div>
+                </div>
+                <div class="skill-card reveal parallax-layer" data-speed="0.6">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div class="skill-name">GitHub</div>
+                    <div class="skill-level">Code Hosting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="parallax-section">
+        <div class="section-header reveal">
+            <span class="section-tag">Projects</span>
+            <h2>My Work</h2>
+            <p class="section-description">
+                Check out some of my latest projects
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card reveal parallax-layer" data-speed="0.4">
+                <div class="project-image">🏢</div>
+                <div class="project-content">
+                    <h3 class="project-title">Elite Steam Tex</h3>
+                    <p class="project-description">
+                        Professional web presentation for Elite Steam Tex company. Modern design, 
+                        fully responsive and optimized for all devices with smooth animations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <a href="https://elitesteamtex.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal parallax-layer" data-speed="0.5">
+                <div class="project-image">💼</div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        Personal portfolio website showcasing my skills and projects. Built with focus 
+                        on modern design, performance, and interactive user experience.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canvas</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        Currently Viewing
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal parallax-layer" data-speed="0.4">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3 class="project-title">Web Application</h3>
+                    <p class="project-description">
+                        Full-stack web application with modern frontend framework and robust backend. 
+                        Currently in active development with focus on scalability.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        Coming Soon
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card reveal parallax-layer" data-speed="0.5">
+                <div class="project-image">🎯</div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">
+                        Complex e-commerce platform with payment integration, admin panel, inventory 
+                        management and advanced features. In development phase.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Database</span>
+                        <span class="tag">Payment</span>
+                    </div>
+                    <a href="#" class="project-link">
+                        Coming Soon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="parallax-section">
+        <div class="contact-container reveal">
+            <div class="contact-content">
+                <h2 class="contact-title">
+                    Let's Work<br>
+                    <span class="gradient-text">Together!</span>
+                </h2>
+                <p class="contact-description">
+                    Have a project in mind or want to collaborate? Feel free to reach out!
+                </p>
+                <a href="mailto:aleksa.stanojevic2008@gmail.com" class="btn-primary">
+                    Send Email
+                </a>
+                <div class="social-links" style="justify-content: center; margin-top: 2rem;">
+                    <a href="mailto:aleksa.stanojevic2008@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Aleksa Stanojević. All rights reserved.</p>
+            <p style="color: var(--accent-purple);">Built with passion and code</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
