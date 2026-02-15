@@ -1,0 +1,9 @@
+# robots.txt - Aleksa Stanojević Portfolio
+User-agent: *
+Allow: /
+Disallow: /sw.js
+Disallow: /*.json$
+
+Sitemap: https://aleksa-stanojević.com/sitemap.xml
+
+Crawl-delay: 1
